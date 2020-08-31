@@ -2,11 +2,13 @@ name: CD
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - '**.css'
       - '**.html'
       - '**.png'
+      - '**.vue'
+      - '**.js'
 
 jobs:
   build:
