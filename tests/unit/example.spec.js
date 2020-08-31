@@ -22,6 +22,6 @@ describe('HelloWorld.vue', () => {
       vuetify,
       propsData: { msg },
     });
-    expect(wrapper.text()).toContain('squiddymabob');
+    expect(wrapper.text()).toContain('Squiddymabob');
   });
 });
