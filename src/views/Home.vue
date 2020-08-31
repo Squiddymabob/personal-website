@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <!-- Component -->
     <HelloWorld />
   </div>
 </template>
