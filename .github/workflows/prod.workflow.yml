@@ -1,0 +1,31 @@
+name: CD
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.css'
+      - '**.html'
+      - '**.png'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: npm install
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Upload files to storage account
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.11.1
+          inlineScript: az storage blob sync --source dist --container '$web' --account-name websitesquiddymabob
