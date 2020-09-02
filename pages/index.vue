@@ -3,12 +3,7 @@
     <v-flex xs12>
       <Greetings />
     </v-flex>
-    <v-flex
-      v-for="section in sections"
-      :key="section"
-      xs12
-      xl9
-    >
+    <v-flex v-for="section in sections" :key="section" xs12 xl9>
       <ContentSection :section="section" />
     </v-flex>
   </v-layout>
@@ -25,7 +20,14 @@ export default {
   },
   data () {
     return {
-      sections: ['projects', 'experience/role1', 'experience/role2', 'experience/role3', 'education', 'links']
+      sections: [
+        'projects',
+        'experience/role1',
+        'experience/role2',
+        'experience/role3',
+        'education',
+        'links'
+      ]
     }
   }
 }

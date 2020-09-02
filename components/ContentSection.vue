@@ -1,5 +1,6 @@
 <template>
   <v-card flat class="mt-6 px-4 transparent">
+    <!-- Section title -->
     <div class="text-h3 mb-3 primary--text">
       {{ content.title }}
     </div>
@@ -18,7 +19,6 @@
       <div class="text-subtitle-1 info--text">
         {{ content.dates }}
       </div>
-
       <!-- Expansion panel content -->
       <v-expansion-panels v-if="section.includes('experience')" flat class="mt-2 mb-2">
         <v-expansion-panel>
@@ -28,11 +28,13 @@
           >
             Details
             <template v-slot:actions>
+              <!-- Custom expansion panel icon -->
               <v-icon color="primary">
                 $expand
               </v-icon>
             </template>
           </v-expansion-panel-header>
+          <!-- Section content -->
           <v-expansion-panel-content
             :color="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-4'"
           >
@@ -42,6 +44,7 @@
       </v-expansion-panels>
     </div>
 
+    <!-- Section content -->
     <div v-else class="px-5">
       <nuxt-content :document="content" />
     </div>
