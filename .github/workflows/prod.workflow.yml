@@ -10,6 +10,7 @@ on:
       - '**.vue'
       - '**.js'
       - '**.svg'
+      - '**.md'
 
 jobs:
   deploy:
