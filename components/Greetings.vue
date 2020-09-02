@@ -1,13 +1,13 @@
 <template>
-  <v-card flat tile class="pa-6">
+  <v-card flat class="pa-6 transparent">
     <v-row class="text-center">
       <v-col cols="12 display-4">
         🦑
       </v-col>
       <v-col>
-        <h1 class="display-2 font-weight-bold mb-3">
+        <div class="text-h2 mb-3">
           {{ content.title }}
-        </h1>
+        </div>
         <div class="subheading font-weight-regular">
           <nuxt-content :document="content" />
         </div>
