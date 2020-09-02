@@ -15,13 +15,11 @@ describe('Greetings.vue', () => {
     vuetify = new Vuetify()
   })
 
-  it('renders props.msg when passed', () => {
-    const msg = 'new message'
+  it('renders content', () => {
     wrapper = shallowMount(Greetings, {
       localVue,
-      vuetify,
-      propsData: { msg }
+      vuetify
     })
-    expect(wrapper.text()).toContain('Squiddymabob')
+    expect(wrapper.text()).toContain('UI design and improving user experience.')
   })
 })
