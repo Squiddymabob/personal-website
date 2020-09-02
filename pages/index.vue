@@ -7,7 +7,7 @@
       v-for="section in sections"
       :key="section"
       xs12
-      xl10
+      xl9
     >
       <ContentSection :section="section" />
     </v-flex>
@@ -25,7 +25,7 @@ export default {
   },
   data () {
     return {
-      sections: ['projects', 'experience', 'links']
+      sections: ['projects', 'experience/role1', 'experience/role2', 'experience/role3', 'links']
     }
   }
 }
