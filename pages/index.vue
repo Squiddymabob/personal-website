@@ -64,6 +64,11 @@ export default {
         'education'
       ]
     }
+  },
+  head () {
+    return {
+      title: 'Emily White'
+    }
   }
 }
 </script>
