@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="mr-0 ml-3">
     <v-layout row wrap>
       <v-flex shrink mr-5>
         <v-icon>wb_sunny</v-icon>
