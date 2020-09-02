@@ -1,15 +1,15 @@
 <template>
-  <v-card flat class="pt-6 mt-3 px-4 transparent">
+  <v-card flat class="mt-6 px-4 transparent">
     <div class="text-h3 mb-3 primary--text">
       {{ content.title }}
     </div>
 
-    <!-- Formatiing for experience section -->
-    <div v-if="section.includes('experience')" class="px-5">
+    <!-- Formatiing for experience and education sections -->
+    <div v-if="section.includes('experience') || section.includes('education')" class="px-5">
       <div class="text-subtitle-1 secondary--text">
         {{ content.company }}
       </div>
-      <div class="text-h5 mb-2">
+      <div class="text-h5">
         {{ content.role }}
       </div>
       <div class="text-caption accent--text">
@@ -20,7 +20,7 @@
       </div>
 
       <!-- Expansion panel content -->
-      <v-expansion-panels flat class="mt-2">
+      <v-expansion-panels v-if="section.includes('experience')" flat class="mt-2 mb-2">
         <v-expansion-panel>
           <v-expansion-panel-header
             :color="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-4'"

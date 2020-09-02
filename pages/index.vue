@@ -25,7 +25,7 @@ export default {
   },
   data () {
     return {
-      sections: ['projects', 'experience/role1', 'experience/role2', 'experience/role3', 'links']
+      sections: ['projects', 'experience/role1', 'experience/role2', 'experience/role3', 'education', 'links']
     }
   }
 }
