@@ -34,11 +34,11 @@ Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `dist` folder.
+Builds the app for production to the `.nuxt` folder.
 
 ### `npm run generate`
 
-Generate static project.
+Generate static project to the `dist` folder.
 
 ## :heart: Acknowledgements
 
