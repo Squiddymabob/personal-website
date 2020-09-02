@@ -1,4 +1,4 @@
-# :squid: Personal Website Using Vue.js
+# :squid: Personal Website Using Nuxt.js (Vue.js)
 
 A personal website created using Vue.js, Nuxt.js, and Vuetify. Content written in Markdown. Automatically deployed to Azure on a merge to the master branch.
 ## :trophy: Goals
