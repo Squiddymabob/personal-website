@@ -6,7 +6,26 @@
     </div>
 
     <!-- Section content -->
-    <div class="px-5" :class="title === 'Technologies' ? 'text-center' : ''">
+    <div v-if="title === 'Technologies'" class="px-5 text-center">
+      <v-tooltip
+        v-for="icon in icons"
+        :key="icon.name"
+        top
+      >
+        <template v-slot:activator="{ on }">
+          <img
+            :src="getImagePath(icon.name)"
+            width="60"
+            height="60"
+            class="mx-2"
+            v-on="on"
+          >
+        </template>
+        <span>{{ icon.name }}</span>
+      </v-tooltip>
+    </div>
+
+    <div v-else class="px-5">
       <v-tooltip
         v-for="icon in icons"
         :key="icon.name"
@@ -19,13 +38,12 @@
             icon
             :href="icon.link"
             class="mx-1"
-            :disabled="!icon.link"
+            v-on="on"
           >
             <img
               :src="getImagePath(icon.name)"
               width="60"
               height="60"
-              v-on="on"
             >
           </v-btn>
         </template>
