@@ -14,7 +14,7 @@
         </v-tooltip>
       </v-col>
       <v-col>
-        <div class="text-h2 mb-3">
+        <div class="text-h2 mb-3 primary--text">
           {{ content.title }}
         </div>
         <div class="subheading font-weight-regular">

@@ -1,28 +1,26 @@
 <template>
-  <v-card flat class="pt-6 px-4 transparent">
-    <div class="text-h3 mb-2">
+  <v-card flat class="pt-6 mt-3 px-4 transparent">
+    <div class="text-h3 mb-3 primary--text">
       {{ content.title }}
     </div>
 
     <!-- Formatiing for experience section -->
-    <div v-if="section.includes('experience')">
-      <div class="px-5 pt-5">
-        <div class="text-subtitle-1">
-          {{ content.company }}
-        </div>
-        <div class="text-h5 mb-2">
-          {{ content.role }}
-        </div>
-        <div class="text-caption">
-          {{ content.location }}
-        </div>
-        <div class="text-subtitle-1">
-          {{ content.dates }}
-        </div>
+    <div v-if="section.includes('experience')" class="px-5">
+      <div class="text-subtitle-1 secondary--text">
+        {{ content.company }}
+      </div>
+      <div class="text-h5 mb-2">
+        {{ content.role }}
+      </div>
+      <div class="text-caption accent--text">
+        {{ content.location }}
+      </div>
+      <div class="text-subtitle-1 info--text">
+        {{ content.dates }}
       </div>
 
       <!-- Expansion panel content -->
-      <v-expansion-panels flat class="mt-2 px-5">
+      <v-expansion-panels flat class="mt-2">
         <v-expansion-panel>
           <v-expansion-panel-header
             :color="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-4'"
@@ -44,7 +42,7 @@
       </v-expansion-panels>
     </div>
 
-    <div v-else class="px-5 pt-5">
+    <div v-else class="px-5">
       <nuxt-content :document="content" />
     </div>
   </v-card>
