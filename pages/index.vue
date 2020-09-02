@@ -1,8 +1,15 @@
 <template>
-  <v-layout column justify-center align-center>
+  <v-layout row wrap justify-center align-center>
     <v-flex xs12>
       <Greetings />
-      <ContentSection v-for="section in sections" :key="section" :section="section" />
+    </v-flex>
+    <v-flex
+      v-for="section in sections"
+      :key="section"
+      xs12
+      xl10
+    >
+      <ContentSection :section="section" />
     </v-flex>
   </v-layout>
 </template>
@@ -18,7 +25,7 @@ export default {
   },
   data () {
     return {
-      sections: ['projects', 'links']
+      sections: ['projects', 'experience', 'links']
     }
   }
 }
