@@ -89,6 +89,13 @@ export default {
           success: colors.green.accent3
         }
       }
+    },
+    defaultAssets: {
+      font: true,
+      icons: 'md'
+    },
+    icons: {
+      iconfont: 'md'
     }
   },
   /*
