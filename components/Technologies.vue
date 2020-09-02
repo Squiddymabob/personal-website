@@ -7,13 +7,22 @@
 
     <!-- Section content -->
     <div class="px-5 text-center">
-      <img
+      <v-tooltip
         v-for="technology in technologies"
         :key="technology"
-        :src="getImagePath(technology)"
-        width="100"
-        height="100"
+        top
       >
+        <template v-slot:activator="{ on }">
+          <img
+            :src="getImagePath(technology)"
+            width="60"
+            height="60"
+            class="mx-2"
+            v-on="on"
+          >
+        </template>
+        <span>{{ technology }}</span>
+      </v-tooltip>
     </div>
   </v-card>
 </template>
@@ -22,7 +31,24 @@
 export default {
   data () {
     return {
-      technologies: ['javascript']
+      technologies: [
+        'JavaScript',
+        'Vue.js',
+        'React',
+        'HTML5',
+        'CSS3',
+        'Java',
+        'Python',
+        'Nuxt.js',
+        'Sass',
+        'Bootstrap',
+        'Git',
+        'Docker',
+        'AWS',
+        'VSCode',
+        'GIMP',
+        'AdobeXD'
+      ]
     }
   },
   methods: {
