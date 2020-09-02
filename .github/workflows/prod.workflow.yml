@@ -9,6 +9,7 @@ on:
       - '**.png'
       - '**.vue'
       - '**.js'
+      - '**.svg'
 
 jobs:
   deploy:
