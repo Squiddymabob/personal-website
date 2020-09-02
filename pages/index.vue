@@ -3,6 +3,9 @@
     <v-flex xs12>
       <Greetings />
     </v-flex>
+    <v-flex xs12 xl9>
+      <Technologies />
+    </v-flex>
     <v-flex v-for="section in sections" :key="section" xs12 xl9>
       <ContentSection :section="section" />
     </v-flex>
@@ -12,11 +15,13 @@
 <script>
 import Greetings from '~/components/Greetings.vue'
 import ContentSection from '~/components/ContentSection.vue'
+import Technologies from '~/components/Technologies.vue'
 
 export default {
   components: {
     Greetings,
-    ContentSection
+    ContentSection,
+    Technologies
   },
   data () {
     return {
