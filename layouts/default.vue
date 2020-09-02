@@ -1,12 +1,12 @@
 <template>
   <v-app dark>
     <v-main>
+      <DarkModeToggle />
       <v-container>
         <nuxt />
       </v-container>
     </v-main>
     <v-footer
-      :absolute="!fixed"
       app
     >
       <span>&copy; {{ new Date().getFullYear() }}</span>
@@ -15,10 +15,11 @@
 </template>
 
 <script>
+import DarkModeToggle from '~/components/DarkModeToggle.vue'
+
 export default {
-  data () {
-    return {
-    }
+  components: {
+    DarkModeToggle
   }
 }
 </script>
