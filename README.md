@@ -1,10 +1,10 @@
 # :squid: Personal Website Using Vue.js
 
-A personal website created using Vue.js and Vuetify. Automatically deployed to Azure on a merge to the master branch.
-
+A personal website created using Vue.js, Nuxt.js, and Vuetify. Content written in Markdown. Automatically deployed to Azure on a merge to the master branch.
 ## :trophy: Goals
 
 - Improve Vue.js skills.
+- Learn how to create a static website using Nuxt.js.
 - Learn how to deploy a static website to Azure.
     - Use Terraform for the first time!
     - Add Github actions to build and deploy automatically from the master branch.
@@ -13,9 +13,8 @@ A personal website created using Vue.js and Vuetify. Automatically deployed to A
 ## :computer: Technologies Used
 
 - Vue.js
+- [Nuxt.js](https://nuxtjs.org)
 - [Vuetify v2.3.10](https://vuetifyjs.com/)
-- Vue Router
-- Vuex
 - Github Actions
 - Azure
 - Jest
@@ -24,18 +23,22 @@ A personal website created using Vue.js and Vuetify. Automatically deployed to A
 
 In the project directory, you can run:
 
-### `npm run start`
+### `npm run dev`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm run test:unit`
+### `npm run test`
 
 Launches the test runner in the interactive watch mode.
 
-### `npm run-script build`
+### `npm run build`
 
 Builds the app for production to the `dist` folder.
+
+### `npm run generate`
+
+Generate static project.
 
 ## :heart: Acknowledgements
 
