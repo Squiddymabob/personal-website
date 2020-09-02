@@ -12,9 +12,9 @@ A personal website created using Vue.js, Nuxt.js, and Vuetify. Content written i
 
 ## :computer: Technologies Used
 
-- Vue.js
+- [Vue.js](https://vuejs.org/)
 - [Nuxt.js](https://nuxtjs.org)
-- [Vuetify v2.3.10](https://vuetifyjs.com/)
+- [Vuetify](https://vuetifyjs.com/)
 - Github Actions
 - Azure
 - Jest
