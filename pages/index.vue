@@ -58,6 +58,7 @@ export default {
     return {
       sections: [
         'projects',
+        'experience/role0',
         'experience/role1',
         'experience/role2',
         'experience/role3',
