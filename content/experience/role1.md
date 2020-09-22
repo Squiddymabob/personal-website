@@ -1,5 +1,4 @@
 ---
-title: Experience
 role: Software Engineer
 company: Roke
 location: 'Romsey, Hampshire'
