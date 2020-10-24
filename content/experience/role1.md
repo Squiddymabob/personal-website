@@ -2,7 +2,7 @@
 role: Software Engineer
 company: Roke
 location: 'Romsey, Hampshire'
-dates: 'Sep 2018 – Sep 2020'
+dates: 'Sep 2018 – Sep 2020 (2 years)'
 ---
 
 - Full-stack developer role for an artefact analysis and storage system using Python, JavaScript, AWS, Docker, Docker Compose, Git, GitLab, Vue.js, and Elasticsearch. All within a Linux environment.
