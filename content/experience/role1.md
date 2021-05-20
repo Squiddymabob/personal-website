@@ -5,7 +5,7 @@ location: 'Romsey, Hampshire'
 dates: 'Sep 2018 – Sep 2020 (2 years)'
 ---
 
-- Full-stack developer role for an artefact analysis and storage system using Python, JavaScript, AWS, Docker, Docker Compose, Git, GitLab, Vue.js, and Elasticsearch. All within a Linux environment.
+- Full-stack developer on a project creating an artefact analysis and storage system using Python, JavaScript, AWS, Docker, Docker Compose, Git, GitLab, Vue.js, and Elasticsearch. All within a Linux environment.
 - Responsible for design and development of the UI using Vue.js with Vuetify for analytics dashboards.
 - RESTful API design and implementation.
 - Designed and implemented a core system feature to display system status and alerts to both users and the project team, written in Python and executed using AWS Lambda.
